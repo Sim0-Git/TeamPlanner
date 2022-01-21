@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Widget.AppCompat.Button.Borderless"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#6BBBD9"
+    tools:context=".teams.MyTeamsActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:minHeight="720dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/group"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginEnd="57dp"
+                android:layout_marginRight="57dp"
+                android:background="#F2C795"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+                <View
+                    android:id="@+id/view2"
+                    android:layout_width="0dp"
+                    android:layout_height="2dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:background="#505250"
+                    app:layout_constraintEnd_toEndOf="@+id/myTeamsTextView"
+                    app:layout_constraintStart_toStartOf="@+id/myTeamsTextView"
+                    app:layout_constraintTop_toBottomOf="@+id/myTeamsTextView" />
+
+                <TextView
+                    android:id="@+id/myTeamsTextView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:fontFamily="@font/squada_one"
+                    android:gravity="center"
+                    android:text="MY TEAMS"
+                    android:textSize="30sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <include
+                    layout="@layout/game_content_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="12dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <ImageButton
+                android:id="@+id/homeButton3"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="50dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="160dp"
+                android:background="@null"
+                app:layout_constraintEnd_toEndOf="@+id/profileButton3"
+                app:layout_constraintStart_toEndOf="@+id/group"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_home" />
+
+            <ImageButton
+                android:id="@+id/myTeamsButton3"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="50dp"
+                android:layout_height="80dp"
+                android:background="#F2C795"
+                app:layout_constraintEnd_toEndOf="@+id/profileButton3"
+                app:layout_constraintStart_toStartOf="@+id/profileButton3"
+                app:layout_constraintTop_toBottomOf="@+id/profileButton3"
+                app:srcCompat="@drawable/ic_teams" />
+
+            <ImageButton
+                android:id="@+id/dutiesButton3"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="50dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginLeft="1dp"
+                android:background="@null"
+                app:layout_constraintEnd_toEndOf="@+id/myTeamsButton3"
+                app:layout_constraintStart_toEndOf="@+id/group"
+                app:layout_constraintStart_toStartOf="@+id/myTeamsButton3"
+                app:layout_constraintTop_toBottomOf="@+id/myTeamsButton3"
+                app:srcCompat="@drawable/ic_duty" />
+
+            <ImageButton
+                android:id="@+id/profileButton3"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="50dp"
+                android:layout_height="80dp"
+                android:background="@null"
+                app:layout_constraintEnd_toEndOf="@+id/homeButton3"
+                app:layout_constraintStart_toStartOf="@+id/homeButton3"
+                app:layout_constraintTop_toBottomOf="@+id/homeButton3"
+                app:srcCompat="@drawable/ic_profile" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/addButtonMyTeams"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="120dp"
+            android:layout_marginEnd="65dp"
+            android:layout_marginRight="65dp"
+            android:layout_marginBottom="15dp"
+            android:background="#505250"
+            android:elevation="3dp"
+            android:stateListAnimator="@null"
+            android:translationZ="2dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/ic_add2" />
+
+        <Button
+            android:id="@+id/addTeamButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginEnd="65dp"
+            android:layout_marginRight="65dp"
+            android:layout_marginBottom="70dp"
+            android:fontFamily="@font/squada_one"
+            android:text="New Team"
+            android:textSize="16sp"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

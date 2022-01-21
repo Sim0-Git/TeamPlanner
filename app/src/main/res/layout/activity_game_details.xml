@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5EABC"
+    tools:context=".games.GameDetailsActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:minHeight="700dp">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:fontFamily="@font/squada_one"
+            android:text="Edit game"
+            android:textSize="26sp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline9"
+            app:layout_constraintStart_toStartOf="@+id/guideline8"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.06" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.94" />
+
+        <Button
+            android:id="@+id/deleteButtonDetail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="delete game"
+            android:textSize="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/updateButtonDetail"
+            app:layout_constraintEnd_toStartOf="@+id/updateButtonDetail"
+            app:layout_constraintStart_toStartOf="@+id/guideline8"
+            app:layout_constraintTop_toTopOf="@+id/updateButtonDetail" />
+
+        <Button
+            android:id="@+id/updateButtonDetail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="140dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginRight="25dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="update game"
+            android:textSize="16dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline9"
+            app:layout_constraintStart_toEndOf="@+id/deleteButtonDetail"
+            app:layout_constraintTop_toBottomOf="@+id/editTexteventTypeDetails" />
+
+        <EditText
+            android:id="@+id/editTextTextOpponentDetail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp"
+            android:ems="10"
+            android:hint="opponent"
+            android:inputType="textPersonName"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline9"
+            app:layout_constraintStart_toStartOf="@+id/guideline8"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <EditText
+            android:id="@+id/editTextDateDetails"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:ems="10"
+            android:hint="date"
+            android:inputType="date"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline9"
+            app:layout_constraintStart_toStartOf="@+id/guideline8"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextOpponentDetail" />
+
+        <EditText
+            android:id="@+id/editTextTimeDetails"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:ems="10"
+            android:hint="time"
+            android:inputType="time"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline9"
+            app:layout_constraintStart_toStartOf="@+id/guideline8"
+            app:layout_constraintTop_toBottomOf="@+id/editTextDateDetails" />
+
+        <EditText
+            android:id="@+id/editTextLocationDetails"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:ems="10"
+            android:hint="location"
+            android:inputType="textPersonName"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline9"
+            app:layout_constraintStart_toStartOf="@+id/guideline8"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTimeDetails" />
+
+        <EditText
+            android:id="@+id/editTextaddressDetails"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:ems="10"
+            android:hint="address"
+            android:inputType="textPersonName"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline9"
+            app:layout_constraintStart_toStartOf="@+id/guideline8"
+            app:layout_constraintTop_toBottomOf="@+id/editTextLocationDetails" />
+
+        <EditText
+            android:id="@+id/editTexteventTypeDetails"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:hint="event Type"
+            android:inputType="textPersonName"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toStartOf="@+id/guideline9"
+            app:layout_constraintStart_toStartOf="@+id/guideline8"
+            app:layout_constraintTop_toBottomOf="@+id/editTextaddressDetails" />
+
+        <Button
+            android:id="@+id/viewAllDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            android:text="view all"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toStartOf="@+id/guideline9"
+            app:layout_constraintTop_toBottomOf="@+id/editTexteventTypeDetails" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
